@@ -6,9 +6,10 @@ const Banner = () => {
   const [title, setTitle] = useState('');
 
   useEffect(() => {
+    const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
     axios
       .get(
-        'https://api.themoviedb.org/3/trending/movie/day?api_key=6e92fb894ebdfbd1e275584ed8a44b47&language=en-US&page=1'
+        `https://api.themoviedb.org/3/trending/movie/day?api_key=${API_KEY}&language=en-US&page=1`
       )
       .then((response) => {
           console.log('Films', response.data);

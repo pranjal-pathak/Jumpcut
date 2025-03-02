@@ -23,7 +23,11 @@ const Watchlist = () => {
             <th className="px-6 py-4 font-medium text-gray-900">Name</th>
             <th>
               <div className="flex">
-                <div>Ratings</div>
+                <div>
+                  <i className="fa-solid fa-arrow-up hover:cursor-pointer" />
+                  <span>Ratings</span>
+                  <i className="fa-solid fa-arrow-down   hover:cursor-pointer" />
+                </div>
               </div>
             </th>
             <th>
